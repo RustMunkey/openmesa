@@ -1,0 +1,14 @@
+packages:
+  - 'apps/*'
+  - 'services/*'
+  - 'cli/*'
+  - 'sdk/*'
+  - 'packages/*'
+
+ignoredBuiltDependencies:
+  - sharp
+  - unrs-resolver
+
+pnpm:
+  allowBuild:
+    - '@biomejs/biome'

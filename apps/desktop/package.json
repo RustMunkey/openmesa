@@ -1,0 +1,21 @@
+{
+	"name": "@openmesa/desktop",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "tauri dev",
+		"build": "tauri build",
+		"ios:init": "tauri ios init",
+		"ios:dev": "tauri ios dev",
+		"ios:build": "tauri ios build",
+		"android:init": "tauri android init",
+		"android:dev": "tauri android dev",
+		"android:build": "tauri android build"
+	},
+	"dependencies": {
+		"@tauri-apps/api": "^2"
+	},
+	"devDependencies": {
+		"@tauri-apps/cli": "^2"
+	}
+}

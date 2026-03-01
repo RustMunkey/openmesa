@@ -1,0 +1,81 @@
+{
+	"name": "deimos-code",
+	"displayName": "Deimos Code",
+	"description": "AI coding assistant powered by Deimos",
+	"version": "0.1.0",
+	"publisher": "openmesa",
+	"engines": {
+		"vscode": "^1.85.0"
+	},
+	"categories": [
+		"AI",
+		"Chat"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "deimos.openRepl",
+				"title": "Deimos: Open Code REPL",
+				"icon": "$(sparkle)"
+			},
+			{
+				"command": "deimos.askAboutSelection",
+				"title": "Deimos: Ask about selection"
+			},
+			{
+				"command": "deimos.explainFile",
+				"title": "Deimos: Explain this file"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "deimos.openRepl",
+				"key": "ctrl+shift+d",
+				"mac": "cmd+shift+d"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "deimos.askAboutSelection",
+					"when": "editorHasSelection",
+					"group": "deimos"
+				},
+				{
+					"command": "deimos.explainFile",
+					"group": "deimos"
+				}
+			]
+		},
+		"configuration": {
+			"title": "Deimos",
+			"properties": {
+				"deimos.replPath": {
+					"type": "string",
+					"default": "code",
+					"description": "Path to the Deimos Code binary"
+				},
+				"deimos.autoOpen": {
+					"type": "boolean",
+					"default": false,
+					"description": "Automatically open REPL on workspace open"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.json",
+		"watch": "tsc -watch -p tsconfig.json",
+		"package": "vsce package"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.85.0",
+		"@types/node": "^20.0.0",
+		"typescript": "^5.0.0",
+		"@vscode/vsce": "^2.0.0"
+	}
+}

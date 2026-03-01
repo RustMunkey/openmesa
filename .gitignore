@@ -1,0 +1,91 @@
+# ── Node ──────────────────────────────────────────────────────────────────────
+node_modules/
+.pnpm-store/
+.pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Next.js ───────────────────────────────────────────────────────────────────
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# ── Tauri / desktop ───────────────────────────────────────────────────────────
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/gen/android/
+apps/desktop/src-tauri/gen/apple/
+
+# ── Rust ──────────────────────────────────────────────────────────────────────
+cli/deimos/target/
+cli/code/target/
+target/
+
+# ── Python ────────────────────────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# ── Databases ─────────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Env / secrets ─────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+.secrets
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.pem
+
+# ── Editors ───────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Test output ───────────────────────────────────────────────────────────────
+playwright-report/
+test-results/
+coverage/
+
+# ── Infra / deploy ────────────────────────────────────────────────────────────
+infra/tf/.terraform/
+infra/tf/*.tfstate
+infra/tf/*.tfstate.backup
+infra/tf/.terraform.lock.hcl
+*.tfvars
+!*.tfvars.example
+
+# ── Build / cache ─────────────────────────────────────────────────────────────
+.turbo/
+.vercel/
+.cache/
+dist/
+
+# ── Deimos runtime ────────────────────────────────────────────────────────────
+.deimos/
+.exo/
+
+# ── Local assets (not committed — drop your own copies here) ──────────────────
+apps/*/public/fonts/
+
+# ── GitHub Actions (ignored until tested — see .claude/GITHUB.md) ─────────────
+.github/workflows/
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+*.log
+*.lock.bak
+.claude/
+CLAUDE.md

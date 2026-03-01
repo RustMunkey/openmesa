@@ -1,0 +1,20 @@
+---
+title: Introduction
+description: Get started with the OpenMesa API.
+---
+
+# Introduction
+
+Welcome to the OpenMesa documentation. OpenMesa provides access to the **Deimos**, **Phobos**, and **Ares** model families via a simple, OpenAI-compatible API.
+
+## Quickstart
+
+```bash
+curl https://api.openmesa.ai/v1/chat/completions \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "deimos-orbit",
+    "messages": [{ "role": "user", "content": "Hello!" }]
+  }'
+```
