@@ -10,7 +10,7 @@
 		"format": "biome format --write ."
 	},
 	"dependencies": {
-		"fumadocs-core": "^15",
+		"fumadocs-core": "^16",
 		"fumadocs-mdx": "^11",
 		"fumadocs-ui": "^15",
 		"next": "16.1.6",
