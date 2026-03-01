@@ -78,9 +78,6 @@ dist/
 .deimos/
 .exo/
 
-# ── Local assets (not committed — drop your own copies here) ──────────────────
-apps/*/public/fonts/
-
 # ── GitHub Actions (ignored until tested — see .claude/GITHUB.md) ─────────────
 .github/workflows/
 
