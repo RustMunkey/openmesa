@@ -79,7 +79,7 @@ dist/
 .exo/
 
 # ── GitHub Actions (ignored until tested — see .claude/GITHUB.md) ─────────────
-.github/workflows/
+.github/
 
 # ── Misc ──────────────────────────────────────────────────────────────────────
 *.log
