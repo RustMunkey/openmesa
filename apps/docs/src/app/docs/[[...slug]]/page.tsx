@@ -1,4 +1,4 @@
-import { getMDXComponents } from "fumadocs-ui/mdx";
+import defaultMdxComponents from "fumadocs-ui/mdx";
 import {
 	DocsBody,
 	DocsDescription,
@@ -25,7 +25,7 @@ export default async function Page({
 			<DocsTitle>{page.data.title}</DocsTitle>
 			<DocsDescription>{page.data.description}</DocsDescription>
 			<DocsBody>
-				<MDX components={getMDXComponents()} />
+				<MDX components={defaultMdxComponents} />
 			</DocsBody>
 		</DocsPage>
 	);
